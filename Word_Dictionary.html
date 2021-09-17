@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Dictionary</title>
+    <link rel="stylesheet" href="HMM.css">
+</head>
+
+<body>
+
+    <section>
+        
+        <form class="searchForm" method="GET">
+            <h2>Dictionary</h2>
+            <input type="search" name="searchBox" id="searchBox" placeholder="word to search" value="<?php echo substr($term, 10, 100) ?>">
+            <input type="button" name="submit" value="submit" onclick="wordSearch()">
+        </form>
+
+        <div class="searchResult" id="searchResult">
+            <div>
+                <h3>Word</h3>
+                <p id="word"></p>
+            </div>
+            <div>
+                <h3>Definition</h3>
+                <p id="definition"></p>
+            </div>
+            <div>
+                <h3>Example</h3>
+                <p id="example"></p>
+            </div>
+            <div>
+                <h3>How To Spell?</h3>
+                <p id="spell"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
